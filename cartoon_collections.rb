@@ -17,6 +17,8 @@ end
 
 def find_the_cheese(array)# code an argument here
   # the array below is here to help
+  mason=[]
   cheese_types = ["cheddar", "gouda", "camembert"]
-  array.include?(cheese_types) { |n| 
+  array.any? { |n| if cheese_types.include?(n) mason.push(n) }
+  return mason[0]
 end
