@@ -4,7 +4,9 @@ names.each_with_index { |n, index| puts "#{index+1}. #{n}"}
 end
 
 def summon_captain_planet(veggies)# code an argument here
-  
+  array=[]
+  veggies.map { |n| array.push(n.capitalize+"!") }
+  return array
   # Your code here
 end
 
